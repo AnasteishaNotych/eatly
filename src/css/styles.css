@@ -8,11 +8,30 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./top-restaurants.css');
+@import url('./top-dishes.css');
+@import url('./control-pushases.css');
+@import url('./reviews.css');
+@import url('./banner.css');
+@import url('./faqs.css');
+@import url('./header-sign.css');
+@import url('./footer-sign.css');
+@import url('./discount-banner.css');
+@import url('./restaurant.css');
+@import url('./selection.css');
+@import url('./map');
+@import url('./review-payment.css');
+@import url('./our-pricing.css');
+@import url('./price-card.css');
+@import url('./latest-articles.css');
+@import url('./blog-headline.css');
+@import url('./article-info.css');
+@import url('./contact.css');
+@import url('./form-in.css');
+@import url('./form-up');
+@import url('./form-password.css');
 @import url('./footer.css');
