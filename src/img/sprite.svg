@@ -1,4 +1,4 @@
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg">
 <defs>
 <symbol id="icon-search" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M20.055 7.572c3.447 3.447 3.447 9.036 0 12.483s-9.036 3.447-12.483 0c-3.447-3.447-3.447-9.036 0-12.483s9.036-3.447 12.483 0z"></path>
