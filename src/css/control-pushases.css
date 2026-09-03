@@ -1,0 +1,240 @@
+.container {
+  margin:0 auto;
+}
+
+.control-purchases {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 85px  0 105px ;
+}
+
+.arrow-down{
+  position: absolute;
+  top: 340px;
+right: 0;
+  /* transform: rotate(0deg); */
+
+}
+
+.purchases-wrapper {}
+
+.purchases-text {
+  font-weight: 700;
+    font-size: 30px;
+    line-height: 1.08805;
+    text-transform: capitalize;
+    color: #18181b;
+    width: 313px;
+    padding-bottom: 26px;
+}
+
+.purchases-span {
+  color: #6c5fbc;
+}
+
+.food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.food-item {
+  position: relative;
+ display: flex;
+ padding: 3px 11px;
+ background-color: #fff;
+border-radius: 8px;
+margin-bottom: 2px;
+max-width: 227px;
+}
+
+.food-img {
+  width: 51px;
+  height: 52px;
+  margin-right: 13px;
+}
+
+.food-title {
+  font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #323142;
+    align-items: center;
+}
+
+.purchases-status {
+  font-weight: 500;
+    font-size: 7px;
+    line-height: 1.4;
+    color: #323142;
+}
+
+.time {
+  position: absolute;
+  right: 11px;
+  bottom: 6px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1.4;
+  color: #acadb9;
+  text-align: end;
+}
+
+.food-wrapper {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.purchases-summery {
+  border: 0.93px solid #edf2f7;
+  border-radius: 15px;
+  padding: 22px 22px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summery-button{
+ border-radius: 7px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 31px;
+  gap: 4px;
+}
+.summery-svg{
+  width: 9px;
+  height: 6px;
+}
+
+.summery-top-wrapper{
+  display: flex;
+  gap: 77px;
+  margin-bottom: 26px;
+}
+
+
+.summery-text {}
+
+.summery-card {
+  border: 0.93px solid #edf2f7;
+  border-radius: 11px;
+  padding: 14px
+}
+
+.background-green{
+width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2fdf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:11px ;
+}
+
+
+.background-purpur{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background-color: #f4f0ff;
+margin-right: 11px;
+}
+
+
+.summery-card-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.summery-card-statistic {
+  margin-right: 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.summery-card-text {
+  font-weight: 800;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #1a202c;
+}
+
+.summery-card-span {
+  font-weight: 500;
+    font-size: 9px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #a0aec0;
+}
+
+.summery-card-cost {
+  font-weight: 800;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: #1a202c;
+}
+
+.label {}
+
+.range-input  {
+    width: 100%;
+    height: 12px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border-radius: 20px;
+    outline: none;
+
+    background: linear-gradient(to right,
+        #fbad18 0%,
+        #fbad18 60%,
+        #f8edcf 60%,
+        #f8edcf 100%);
+  }
+
+    .range-input::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+
+      width: 0;
+      height: 0;
+    }
+
+        .range-input::-moz-range-thumb {
+      width: 0;
+      height: 0;
+      border: none;
+
+    }
+
+         .purpur {
+          width: 100%;
+          height: 12px;
+
+          appearance: none;
+          -webkit-appearance: none;
+
+          border-radius: 20px;
+          outline: none;
+
+          background: linear-gradient(to right,
+              #6c5fbc 0%,
+              #6c5fbc 80%,
+              #c7c5d6 60%,
+              #c7c5d6 100%);
+        }
