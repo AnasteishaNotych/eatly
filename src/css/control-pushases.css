@@ -1,6 +1,17 @@
 .container {
   margin:0 auto;
+  box-sizing: border-box;
 }
+div{
+    box-sizing: border-box;
+  }
+li{
+    box-sizing: border-box;
+  }
+ul{
+  box-sizing: border-box;
+}
+
 
 .control-purchases {
   position: relative;
@@ -17,7 +28,9 @@ right: 0;
 
 }
 
-.purchases-wrapper {}
+.purchases-wrapper {
+  margin-bottom: 100px;
+}
 
 .purchases-text {
   font-weight: 700;
@@ -43,11 +56,19 @@ right: 0;
 .food-item {
   position: relative;
  display: flex;
- padding: 3px 11px;
- background-color: #fff;
+ padding: 3px 12px;
+ background-color: #F5F5F5;
 border-radius: 8px;
 margin-bottom: 2px;
-max-width: 227px;
+max-width: 100%;
+z-index: 0;
+transition-duration: 250ms;
+}
+
+.food-item:hover{
+  background: #FFF;
+  z-index: 1;
+  box-shadow: 5px 10px 30px rgba(50, 49, 66, 0.2)
 }
 
 .food-img {
@@ -87,6 +108,7 @@ max-width: 227px;
  flex-direction: column;
  align-items: center;
  justify-content: center;
+   gap: 3px;
 }
 
 .purchases-summery {
@@ -96,6 +118,10 @@ max-width: 227px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 316px;
+    background-color: #fff;
+
+    box-shadow:  5px 40px 30px rgba(50, 49, 66, 0.2)
 }
 
 .summery-button{
@@ -114,7 +140,7 @@ display: flex;
 
 .summery-top-wrapper{
   display: flex;
-  gap: 77px;
+ justify-content: space-between;
   margin-bottom: 26px;
 }
 
@@ -124,7 +150,8 @@ display: flex;
 .summery-card {
   border: 0.93px solid #edf2f7;
   border-radius: 11px;
-  padding: 14px
+  padding: 14px;
+  position: relative;
 }
 
 .background-green{
@@ -154,10 +181,11 @@ margin-right: 11px;
 .summery-card-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 .summery-card-statistic {
-  margin-right: 61px;
+
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -186,13 +214,17 @@ margin-right: 11px;
     letter-spacing: 0.01em;
     text-align: right;
     color: #1a202c;
+    position: absolute;
+    top: 21px;
+    right: 14px;
+
 }
 
 .label {}
 
 .range-input  {
     width: 100%;
-    height: 12px;
+    height: 7px;
 
     appearance: none;
     -webkit-appearance: none;
@@ -224,7 +256,7 @@ margin-right: 11px;
 
          .purpur {
           width: 100%;
-          height: 12px;
+          height: 7px;
 
           appearance: none;
           -webkit-appearance: none;
@@ -238,3 +270,216 @@ margin-right: 11px;
               #c7c5d6 60%,
               #c7c5d6 100%);
         }
+
+
+    @media screen and (min-width: 1024px) {
+.control-purchases{
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 73px 0 98px ;
+}
+
+.purchases-summery{
+ height: 331px;
+ width: 379px;
+ padding:  26px 26px 32px 26px ;
+}
+
+.food-list{
+  margin: 0;
+  width: 245px;
+}
+
+.summery-card {
+  width: 100%;
+  padding: 18px;
+
+}
+
+.summery-card-wrapper{
+  margin-bottom: 14px;
+}
+
+.arrow-down{
+  display: none;
+}
+
+.purchases-text{
+  font-size: 36px;
+  width: 398px;
+  margin-bottom: 34px;
+}
+
+.food-img{
+  width: 54px;
+  height: 56px;
+
+}
+
+.food-item {
+  padding: 4px 17px;
+}
+
+     .summery-top-wrapper {
+       margin-bottom:32px;
+     }
+
+         .background-green {
+          width: 35px;
+            height: 35px;
+            margin-right: 13px;
+         }
+
+         .background-purpur {
+           width: 35px;
+           height: 35px;
+            margin-right: 13px;
+         }
+
+         .summery-card-svg {
+           width:17px;
+           height: 17px;
+         }
+
+                 .summery-card-cost {
+
+                   top: 25px;
+                   right: 17px;
+                      font-weight: 800;
+                        font-size: 21px;
+                        line-height: 1.5;
+                 }
+
+          .summery-text {
+            font-weight: 800;
+            font-size: 20px;
+          }
+              .summery-button{
+
+                  width: 125px;
+                    height: 37px;
+                    gap: 4px;
+                    font-weight: 600;
+                      font-size: 13px;
+                  }
+
+  }
+
+
+            @media screen and (min-width: 1440px) {
+
+            .summery-top-wrapper{
+            margin-bottom: 45px;
+            }
+              .control-purchases {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 73px 0 98px;
+              }
+
+              .purchases-summery {
+              width: 534px;
+              height: 466px;
+                padding: 26px 26px 32px 26px;
+              }
+
+              .food-list {
+                margin: 0;
+                width:345px;
+              }
+
+              .summery-card {
+                width: 100%;
+                padding: 25px;
+
+              }
+
+              .summery-card-wrapper {
+                margin-bottom: 14px;
+              }
+
+
+              .purchases-text {
+                font-size: 50px;
+                width: 559px;
+                margin-bottom: 48px;
+              }
+
+              .food-img {
+              width: 77px;
+              height: 80px;
+              margin-right: 19px;
+              }
+
+              .food-item{
+                padding: 4px 25px;
+              }
+
+              .food-title{
+                font-weight: 600;
+                font-size: 19px;
+              }
+
+              .purchases-status{
+                font-size:12px;
+              }
+
+              .time{
+                    right: 17px;
+                      bottom: 10px;
+              }
+
+              .background-green{
+              width: 50px;
+              height: 50px;
+                    margin-right: 18px;
+
+              }
+
+              .background-purpur{
+                width: 50px;
+                  height: 50px;
+                  margin-right: 18px;}
+
+                  .summery-card-svg{
+                  width: 25px;
+                    height: 25px;
+
+                  }
+
+
+
+           .summery-card-span{
+
+              font-weight: 500;
+                font-size: 15px;
+                line-height: 1.5;
+                  letter-spacing: 0.04em;
+           }
+
+           .summery-card-text{
+        font-weight: 800;
+          font-size: 18px;
+
+           }
+
+                        .summery-card-cost {
+
+                          top: 36px;
+                          right:25px;
+
+                        }
+
+              .summery-text{
+              font-weight: 800;
+                font-size: 28px;
+              }
+
+            .summery-button {
+              width: 175px;
+              height: 53px;
+              gap: 6px;
+
+                font-size: 18px;
+            }
+            }
